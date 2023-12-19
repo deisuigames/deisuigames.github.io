@@ -12,7 +12,7 @@ html {
 body {
  min-height: 100vh;
  background: #ffffff;
- color: #3b4765;
+ color: #873232;
  font-size: 1.1rem;
  font-family: 'メイリオ', 'ヒラギノ角ゴ', sans-serif;
  letter-spacing: 0.2em;
@@ -176,7 +176,7 @@ h1 {
   top: 0;
  padding: 1em 2em 0.5em;
  height: 2em;
- background: #2b3a7b;
+ background: #942121;
  border-bottom-left-radius: 1em;
  border-bottom-right-radius: 1em;
  color: #ffffff;
@@ -216,7 +216,7 @@ h1 {
  position: relative;
  margin: 2em 0;
  min-height: 10em;
- background: #e9eef2;
+ background: #f2e9e9;
  border-radius: 1rem;
  z-index: 1;
 }
@@ -258,20 +258,6 @@ h1 {
  line-height: 2em;
  transition: 0.3s ease-out;
 }
-
-li.linkBox_1 a::before {
- background: url('../img/design54_3.jpg') center 70% / cover no-repeat #e4a4ad;
-}
-li.linkBox_2 a::before {
- background: url('../img/design54_4.jpg') center / cover no-repeat #9dede5;
-}
-li.linkBox_3 a::before {
- background: url('../img/design54_5.jpg') center / cover no-repeat #e9c73c;
-}
-li.linkBox_4 a::before {
- background: url('../img/design54_13.jpg') 20% 70% / 150% no-repeat #e9c73c;
-}
-
 
 
 
