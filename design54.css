@@ -12,7 +12,7 @@ html {
 body {
  min-height: 100vh;
  background: #ffffff/*eaf1f5*/;
- color: #051f5c;
+ color: #960e0e;
  font-size: 1.3rem;
  font-family: 'メイリオ', 'ヒラギノ角ゴ', sans-serif;
  letter-spacing: 0.2em;
@@ -26,7 +26,7 @@ ul,ol {
 }
 
 em {
- background: #d9dbe6;
+ background: #e6d9d9;
  font-style: normal;
 }
 h2 {
@@ -83,7 +83,7 @@ section {
 
 
 .wrap a {
- color: #939ab6;
+ color: #b69393;
 
 }
 
@@ -111,7 +111,7 @@ textarea,input[type="text"] {
 }
 input[type="submit"] {
   padding: 0.5em 1em;
-  background: #2b3a7b;
+  background: #7b2b2b;
   color: #ffffff;
 }
 
@@ -141,7 +141,7 @@ header {
   min-width: 500px;
   max-width: 900px;
  padding: 1em;
- background: #2b3a7b;
+ background: #7b2b2b;
  color: #ffffff;
 }
 .mainNav_frame {
@@ -170,7 +170,7 @@ header {
  transition: 0.3s;
 }
 .mainNav li a:hover {
- color: #9ba4ba;
+ color: #ba9b9b;
 }
 
 .click {
@@ -186,7 +186,7 @@ header {
  padding-top: 10vh;
 }
 .novelList a {
-  color: #051f5c;
+  color: #960e0e;
 }
 
 .novelLong {
@@ -219,7 +219,7 @@ header {
  width: 12em;
  height: 12em;
  background: #666666;
- border: solid 1rem #dadee8;
+ border: solid 1rem #e8dada;
  border-radius: 50%;
 
  transition: 0.3s ease-out;
@@ -329,11 +329,11 @@ li.linkBox_4 a::before {
 footer {
  display: none;
  padding: 0 0 5vh;
- color: #9ba4ba;
+ color: #ba9b9b;
  font-size: 1rem;
  text-align: center;
 }
 footer p a {
- color: #707d9b;
+ color: #9b7070;
 }
 
