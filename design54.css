@@ -1,5 +1,9 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Teko:500&display=swap');
+@font-face {
+  font-family: 'GDhwGoJA-OTF112b2'; 
+  src: url('fonts/GDhwGoJA-OTF112b2.otf') format('opentype');
+}
 /*
 'Teko' is licensed under the Open Font License.
 https://fonts.google.com/specimen/Teko
@@ -14,7 +18,7 @@ body {
  background: #ffffff/*eaf1f5*/;
  color: #960e0e;
  font-size: 1.3rem;
- font-family: 'メイリオ', 'ヒラギノ角ゴ', sans-serif;
+ font-family: 'GDhwGoJA-OTF112b2', sans-serif;
  letter-spacing: 0.2em;
  line-height: 180%;
 }
