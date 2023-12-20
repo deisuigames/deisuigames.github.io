@@ -362,7 +362,7 @@ h1 {
 
 /* メインフッター（削除OK※デフォルト非表示） */
 .mainFooter {
-    display: none;
+    /* display: none; */
     margin: 10vh 0;
     font-size: 1rem;
     letter-spacing: .2em;
