@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
+@font-face {
+  font-family: 'かんじゅくゴシック'; 
+  src: url('fonts/かんじゅくゴシック.otf') format('opentype');
+}
 
 /* フォントのライセンス表記 */
 /*
@@ -21,7 +25,7 @@ body {
     min-height: 100vh;
     background: #f2f7f4;
     font-size: 1.3rem;
-    font-family: '游ゴシック', 'ヒラギノ角ゴ', sans-serif;
+    font-family: 'かんじゅくゴシック', sans-serif;
     letter-spacing: 0.1em;
     line-height: 180%;
 }
@@ -46,7 +50,7 @@ h3,
 h4,
 .mainNav,
 .backTop {
-    font-family: 'Rajdhani', '游ゴシック', 'ヒラギノ角ゴ', sans-serif;
+    font-family: 'Rajdhani', 'かんじゅくゴシック', sans-serif;
 }
 
 
