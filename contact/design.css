@@ -1,3 +1,18 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'かんじゅくゴシック'; 
+  src: url('fonts/かんじゅくゴシック.otf') format('opentype');
+}
+/*
+'Teko' is licensed under the Open Font License.
+https://fonts.google.com/specimen/Teko
+*/
+
+html {
+ background: transparent;
+ font-size: 62.5%;
+}
+
 .Form {
   margin-top: 80px;
   margin-left: auto;
