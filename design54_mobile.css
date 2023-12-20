@@ -23,7 +23,8 @@ body {
  line-height: 180%;
 }
 a {
- text-decoration: none;
+ text-decoration: underline;
+ text-decoration-color:#5c0707;
 }
 ul,ol {
  list-style: none;
