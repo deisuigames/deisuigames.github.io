@@ -14,6 +14,7 @@ html {
 }
 
 .Form {
+  font-family: 'かんじゅくゴシック', sans-serif;
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
@@ -142,6 +143,7 @@ html {
   padding-bottom: 20px;
   width: 280px;
   display: block;
+  font-family: 'かんじゅくゴシック', sans-serif;
   letter-spacing: 0.05em;
   background: #545454;
   color: #fff;
