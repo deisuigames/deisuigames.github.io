@@ -1,5 +1,9 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Teko:500&display=swap');
+@font-face {
+  font-family: 'かんじゅくゴシック'; 
+  src: url('fonts/かんじゅくゴシック.otf') format('opentype');
+}
 /*
 'Teko' is licensed under the Open Font License.
 https://fonts.google.com/specimen/Teko
@@ -14,7 +18,7 @@ body {
  background: #ffffff;
  color: #873232;
  font-size: 1.1rem;
- font-family: 'メイリオ', 'ヒラギノ角ゴ', sans-serif;
+ font-family: 'かんじゅくゴシック', sans-serif;
  letter-spacing: 0.2em;
  line-height: 180%;
 }
@@ -56,7 +60,7 @@ h3 {
  margin: 0.5em;
 }
 em {
-  background: #d9dbe6;
+  background: #e6d9d9;
   font-style: normal;
  }
 
@@ -76,7 +80,7 @@ section,.novelList {
   max-width: 500px;
 }
 .wrap a {
- color: #939ab6;
+ color: #b69393;
 }
 
 
@@ -93,7 +97,7 @@ textarea,input[type="text"] {
 }
 input[type="submit"] {
   padding: 0.2em 0.5em;
-  background: #2b3a7b;
+  background: #7b2b2b;
   color: #ffffff;
 }
 
@@ -103,7 +107,7 @@ input[type="submit"] {
 
 .mainNav {
 /* background: #dfe1e7;*/
- color: #2b3a7b;
+ color: #7b2b2b;
 }
 
 
@@ -116,7 +120,7 @@ header {
  margin: 15vw auto 0;
   width: 80%;
   max-width: 500px;
- background: #dfe1e7;
+ background: #e7dfdf;
 
 }
 .mainNav_frame {
@@ -149,7 +153,7 @@ h1 {
  padding: 0.5em 0;
  width: 100vw;
  height: 15vmin;
- background: #2b3a7b;
+ background: #7b2b2b;
  font-family: 'Teko', sans-serif;
  transition: 0.1s;
  z-index: 4;
@@ -229,7 +233,7 @@ h1 {
  width: 10em;
  height: 10em;
  background: #666666;
- border: solid 1rem #e9eef2;
+ border: solid 1rem #f2e9e9;
  border-radius: 50%;
 }
 
