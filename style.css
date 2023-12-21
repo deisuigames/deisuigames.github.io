@@ -23,7 +23,7 @@ html {
 }
 body {
     min-height: 100vh;
-    background: #f2f7f4;
+    background: #f7f2f2;
     font-size: 1.3rem;
     font-family: 'かんじゅくゴシック', sans-serif;
     letter-spacing: 0.1em;
@@ -62,7 +62,7 @@ h2 {
     background: var(--mainImageURL) center bottom / 200%;
     -webkit-background-clip: text;
     background-clip: text;
-    color: #30a57a11;
+    color: #a5303011;
     font-size: 2.8em;
     font-weight: bolder;
     text-align: center;
@@ -98,11 +98,11 @@ h4.ja {
 /* 強調 */
 em {
     font-style: normal;
-    background-color: #bfd7d1;
-    background: #bce0cb;
+    background-color: #d7bfbf;
+    background: #e0bcbc;
 }
 strong {
-    background: repeating-linear-gradient(90deg, #bce0cb 0, #bce0cb 4px, #fff 4px, #fff 6px);
+    background: repeating-linear-gradient(90deg, #e0bcbc 0, #e0bcbc 4px, #fff 4px, #fff 6px);
     color: #000;
     font-weight: bolder;
 }
@@ -179,7 +179,7 @@ p {
     min-width: 700px;
 }
 .mainWrap a {
-    border-bottom: solid 1px #61b8a3;
+    border-bottom: solid 1px #b86161;
 }
 
 
@@ -190,7 +190,7 @@ p {
 .shortList .new::after {
     content: 'new';
     margin-left: 3px;
-    color: #30a57a;
+    color: #a53030;
     font-size: 1rem;
     letter-spacing: 0;
     vertical-align: top;
@@ -265,7 +265,7 @@ p {
      min-height: 200px;
     padding: 50px 50px 20px;
     margin: auto;
-    background: var(--mainImageURL) center / cover #d0e6d5;
+    background: var(--mainImageURL) center / cover #e6d0d0;
     box-sizing: border-box;
     color: #fff;
     font-family: 'Rajdhani', sans-serif;
@@ -375,11 +375,11 @@ h1 {
 @media (max-width:800px) {
     body {
         background: #fff;
-        color: #2d4039;
+        color: ##402d2d;
         font-size: 1.2rem;
     }
     a {
-        color: #2d4039;
+        color: #402d2d;
     }
     h2 {
         color: #0000;
