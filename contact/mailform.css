@@ -488,6 +488,222 @@ form#mail_form input[type="button"] {
 }
 /* 1000pixel end */
 
+/* ヘッダー */
+.mainImage {
+    display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     align-items: flex-end;
+    position: relative;
+    width: 60%;
+     min-width: 700px;
+     min-height: 200px;
+    padding: 50px 50px 20px;
+    margin: auto;
+    background: var(--mainImageURL) center / cover #e6d0d0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: right;
+}
+.bar {
+    font-family: 'Libre Barcode 128', cursive;
+    font-size: 4em;
+    line-height: 1em;
+}
+.siteInfo {
+    display: flex;
+    width: 50%;
+    min-width: 600px;
+    margin: 40px auto 0;
+    box-sizing: border-box;
+}
+.siteInfoInner {
+    position: relative;
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: #000 solid 2px;
+}
+.lastUp a {
+    color: #30a57a;
+}
+h1 {
+    flex-shrink: 0;
+    display: inline-block;
+    margin: 15px 0;
+    font-size: 2.5em;
+    color: #000;
+}
+
+
+/* ナビゲーション */
+.mainNav {
+    position: sticky;
+     top: 0;
+    width: 55%;
+     min-width: 600px;
+    margin: auto;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.mainNav ul {
+    display: flex;
+     justify-content: flex-end;
+     align-items: baseline;
+    padding: 10px 10px;
+}
+.mainNav li {
+    padding: 0 .5em;
+}
+.mainNav li a {
+    padding: .3em;
+    font-size: 1.5em;
+    text-shadow: 0 0 .5em #ffffff, .1em .1em .5em #ffffff, -.1em -.1em .5em #ffffff;
+}
+.mainNav li a::before {
+    content: '▲';
+    display: inline-block;
+    margin-right: .3em;
+    color: #444444;
+    font-size: .6em;
+    transform: rotate(90deg);
+}
+
+
+/* トップに戻るリンク */
+.backTop {
+    position: sticky;
+     bottom: 5px;
+    text-align: right;
+}
+.backTop a {
+    display: inline-block;
+    position: relative;
+     right: -50px;
+    padding: 5px 20px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    text-shadow: 0 0 .5em #ffffff, .1em .1em .5em #ffffff, -.1em -.1em .5em #ffffff;
+    z-index: 2;
+}
+.backTop a::before {
+    content: '▲';
+    margin-right: .3em;
+    color: #444;
+    font-size: .6em;
+}
+
+
+/* メインフッター（削除OK※デフォルト非表示） */
+.mainFooter {
+    /* display: none; */
+    margin: 10vh 0;
+    font-size: 1rem;
+    letter-spacing: .2em;
+    text-align: center;
+    opacity: .3;
+}
+
+
+/* レスポンシブ調整用 */
+@media (max-width:800px) {
+    body {
+        background: #fff;
+        color: ##402d2d;
+        font-size: 1.2rem;
+    }
+    a {
+        color: #402d2d;
+    }
+    h2 {
+        color: #0000;
+    }
+    h3 > span::before {
+        content: none;
+        width: calc(100% + 40px);
+    }
+    .mailForm .enter {
+        width: 100%;
+         max-width: 400px;
+        margin-bottom: 10px;
+    }
+    .mailForm textarea {
+        height: 100px;
+    }
+    .space {
+        margin: 10px 1em;
+    }
+    .box {
+        padding: 15px;
+        margin: 30px 0 50px;
+    }
+    .mainWrap {
+        width: 95%;
+         min-width: 200px;
+         max-width: 600px;
+        margin: 30px auto;
+    }
+    .namechangeForm .enter {
+        width: 7em;
+    }
+    .longTitle {
+        margin: 0 1.1rem;
+    }
+    .textWrap .box {
+        font-size: 1.4rem;
+    }
+    .mainHeader {
+        margin-bottom: 10px;
+    }
+    .mainImage {
+        width: 90%;
+         min-width: 200px;
+         min-height: 100px;
+        padding: 20px 20px 0px;
+    }
+    .siteInfo {
+        display: block;
+        width: 85%;
+         min-width: 200px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    .mainNav {
+        width: 90%;
+         min-width: 200px;
+    }
+    .backTop a {
+        right: -5px;
+    }
+    .mainFooter {
+        margin: 30px 0;
+    }
+}
+@media(max-width:500px) {
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        margin: 20px 0;
+    }
+    h3 > span {
+        padding: 3px 10px;
+    }
+    h3 > span::before {
+        width: calc(100% + 30px);
+    }
+    .mainNav {
+        width: 95%;
+    }
+    .mainNav li a {
+        font-size: 1.2em;
+    }
+}
+
+
 
 
 
