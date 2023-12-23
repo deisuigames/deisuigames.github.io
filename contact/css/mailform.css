@@ -489,6 +489,139 @@ form#mail_form input[type="button"] {
 
 
 
+/* トップに戻るリンク */
+.backTop {
+    position: sticky;
+     bottom: 5px;
+    text-align: right;
+}
+.backTop a {
+    display: inline-block;
+    position: relative;
+     right: -50px;
+    padding: 5px 20px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    text-shadow: 0 0 .5em #ffffff, .1em .1em .5em #ffffff, -.1em -.1em .5em #ffffff;
+    z-index: 2;
+}
+.backTop a::before {
+    content: '▲';
+    margin-right: .3em;
+    color: #444;
+    font-size: .6em;
+}
+
+
+/* メインフッター（削除OK※デフォルト非表示） */
+.mainFooter {
+    /* display: none; */
+    margin: 10vh 0;
+    font-size: 1rem;
+    letter-spacing: .2em;
+    text-align: center;
+    opacity: .3;
+}
+
+
+/* レスポンシブ調整用 */
+@media (max-width:800px) {
+    body {
+        background: #fff;
+        color: ##402d2d;
+        font-size: 1.2rem;
+    }
+    a {
+        color: #402d2d;
+    }
+    h2 {
+        color: #0000;
+    }
+    h3 > span::before {
+        content: none;
+        width: calc(100% + 40px);
+    }
+    .mailForm .enter {
+        width: 100%;
+         max-width: 400px;
+        margin-bottom: 10px;
+    }
+    .mailForm textarea {
+        height: 100px;
+    }
+    .space {
+        margin: 10px 1em;
+    }
+    .box {
+        padding: 15px;
+        margin: 30px 0 50px;
+    }
+    .mainWrap {
+        width: 95%;
+         min-width: 200px;
+         max-width: 600px;
+        margin: 30px auto;
+    }
+    .namechangeForm .enter {
+        width: 7em;
+    }
+    .longTitle {
+        margin: 0 1.1rem;
+    }
+    .textWrap .box {
+        font-size: 1.4rem;
+    }
+    .mainHeader {
+        margin-bottom: 10px;
+    }
+    .mainImage {
+        width: 90%;
+         min-width: 200px;
+         min-height: 100px;
+        padding: 20px 20px 0px;
+    }
+    .siteInfo {
+        display: block;
+        width: 85%;
+         min-width: 200px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    .mainNav {
+        width: 90%;
+         min-width: 200px;
+    }
+    .backTop a {
+        right: -5px;
+    }
+    .mainFooter {
+        margin: 30px 0;
+    }
+}
+@media(max-width:500px) {
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        margin: 20px 0;
+    }
+    h3 > span {
+        padding: 3px 10px;
+    }
+    h3 > span::before {
+        width: calc(100% + 30px);
+    }
+    .mainNav {
+        width: 95%;
+    }
+    .mainNav li a {
+        font-size: 1.2em;
+    }
+}
+
 
 
 
