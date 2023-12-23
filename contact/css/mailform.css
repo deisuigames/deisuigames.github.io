@@ -169,7 +169,8 @@ form#mail_form dl dt span.required,
 form#mail_form dl dt span.optional {
 	display: inline-block;
 	font-size: 85%;
-	color: #ffffff;
+	/*color: #ffffff;*/
+	color: #000000;
 	padding: 4px 10px;
 	border-radius: 3px;
 }
