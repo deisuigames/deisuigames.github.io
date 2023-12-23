@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="cache-control" content="no-cache">
+<meta charset="UTF-8">
+<title>でいすいのホームページ</title>
+<link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+<link rel="manifest" href="image/site.webmanifest">
+<link rel="mask-icon" href="image/safari-pinned-tab.svg" color="#a70000">
+<!-- SEO設定 -->
+<meta name="robots" content="noarchive">
+<meta name="description" content="大人気ゲーム「スーパーマリオブラザーズ」第4弾である「マリオワールド」RTA元世界一位・登録者約20万人のYouTuber、「でいすいのゲームちゃんねる/DeisuiGames」の公式ホームページです。最新のお知らせやお問い合わせ、各種SNSリンクなど。" /> 
+<meta name="keywords" content="でいすい,deisui,マリオワールド,YouTuber,ホームページ,RTA,公式" />
+<meta property="og:description" content="ページのディスクリプション" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://deisuigames.github.io/" />
+<meta property="og:image" content="https://deisuigames.github.io/image/icon.png" />
+<meta property="og:site_name" content="でいすいのゲームちゃんねる/DeisuiGames" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@atmark_master" />
+<meta property="og:locale" content="ja_JP"  />
+<!-- 謎 -->
+<meta name="msapplication-TileColor" content="#ffaec4">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" type="text/css" href="reset.css" media="screen">
+<link rel="stylesheet" type="text/css" href="style.css" media="screen">
+<!--favicon-->
+<link rel="stylesheet" href="css/mailform.css" />
+<!-- ご希望の日時選択ライブラリここから -->
+<link rel="stylesheet" href="css/jquery.datetimepicker.css" />
+<!-- ご希望の日時選択ライブラリここまで -->
+</head>
+<body>
+<!-- トップに戻る用アンカー -->
+<a id="link_top"></a>
+
+<!-- ヘッダー -->
+<header class="mainHeader">
+    <div class="mainImage">
+        <div class="bar">DeisuiGames</div>
+    </div>
+
+    <div class="siteInfo">
+        <h1>でいすいのホームページ</h1>
+        <div class="siteInfoInner">
+            Official Deisui's homepage.
+            <div class="lastUp"><img src=image/リロードアイコン.png alt="最終更新日" height="12.5px" width="12.5px"><time id="modify"></time>
+<script>
+/* 更新日の取得 */
+const last = new Date(document.lastModified);
+const year = last.getFullYear();
+const month = last.getMonth() + 1;
+const date = last.getDate();
+/* 日付を書き換える */
+const target = document.getElementById('modify');
+target.textContent = year + '-' + month + '-' + date;
+</script></a></div>
+        </div><!-- /siteInfoInner -->
+    </div><!-- /siteInfo -->
+</header>
+<!-- /ヘッダー -->
+
+
+<!-- ナビゲーション -->
+<nav class="mainNav">
+    <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="#link_main">contents</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="/contact">contact</a></li>
+    </ul>
+</nav>
+<!-- /ナビゲーション -->
+
+
+<!-- メインコンテンツ -->
+<main class="mainWrap">
+<h3>お問い合わせ</h3>
+
+<!-- フォーム -->
+<form action="php/mailform.php" method="post" id="mail_form">
+	
+	<dl>
+		<dt><i></i>会社名</dt>
+		<dd><input type="text" name="company" value="" /></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>名前</dt>
+		<dd class="required"><input type="text" name="name_1" value="" /> <input type="text" name="name_2" value="" /></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>ふりがな</dt>
+		<dd><input type="text" name="read_1" value="" /> <input type="text" name="read_2" value="" /></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>メールアドレス</dt>
+		<dd class="required"><input type="email" name="mail_address" value="" /></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>メールアドレス(確認用)</dt>
+		<dd><input type="email" name="mail_address_confirm" value="" /></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>性別</dt>
+		<dd>
+			<ul>
+				<li><label><input type="radio" name="gender" value="男性" />男性</label></li>
+				<li><label><input type="radio" name="gender" value="女性" />女性</label></li>
+			</ul>
+		</dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>恋愛対象</dt>
+		<dd>
+			<ul>
+				<li><label><input type="radio" name="target" value="男性" />男性</label></li>
+				<li><label><input type="radio" name="target" value="女性" />女性</label></li>
+			</ul>
+		</dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>郵便番号</dt>
+		<dd class="required"><input type="text" name="postal" value="" onkeyup="AjaxZip3.zip2addr( this,'','address','address' );" />　<a href="http://www.post.japanpost.jp/zipcode/" target="_blank">郵便番号検索</a></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>住所</dt>
+		<dd><input type="text" name="address" value="" /></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>電話番号</dt>
+		<dd><input type="tel" name="phone" value="" /></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>ご希望の日時</dt>
+		<dd class="required"><input type="text" name="schedule" value="" readonly="readonly" /></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>ご希望の商品</dt>
+		<dd>
+			<select name="product">
+				<option value="">選択してください</option>
+				<option value="iPhone4">iPhone4</option>
+				<option value="iPhone4s">iPhone4s</option>
+				<option value="iPhone5">iPhone5</option>
+				<option value="iPhone5s">iPhone5s</option>
+				<option value="iPhone6">iPhone6</option>
+				<option value="iPhone6 Plus">iPhone6 Plus</option>
+				<option value="iPhone6s">iPhone6s</option>
+				<option value="iPhone6s Plus">iPhone6s Plus</option>
+				<option value="iPhone7">iPhone7</option>
+				<option value="iPhone7 Plus">iPhone7 Plus</option>
+			</select>
+		</dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>ご使用中の商品</dt>
+		<dd>
+			<select name="use">
+				<option value="">選択してください</option>
+				<option value="iPhone4">iPhone4</option>
+				<option value="iPhone4s">iPhone4s</option>
+				<option value="iPhone5">iPhone5</option>
+				<option value="iPhone5s">iPhone5s</option>
+				<option value="iPhone6">iPhone6</option>
+				<option value="iPhone6 Plus">iPhone6 Plus</option>
+				<option value="iPhone6s">iPhone6s</option>
+				<option value="iPhone6s Plus">iPhone6s Plus</option>
+				<option value="iPhone7">iPhone7</option>
+				<option value="iPhone7 Plus">iPhone7 Plus</option>
+				<option value="その他">その他</option>
+			</select>
+		</dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>お問い合わせの種類</dt>
+		<dd>
+			<ul>
+				<li><label><input type="checkbox" name="kind[]" value="WEBサイトについて" />WEBサイトについて</label></li>
+				<li><label><input type="checkbox" name="kind[]" value="商品について" />商品について</label></li>
+				<li><label><input type="checkbox" name="kind[]" value="キャンペーンについて" />キャンペーンについて</label></li>
+				<li><label><input type="checkbox" name="kind[]" value="採用について" />採用について</label></li>
+				<li><label><input type="checkbox" name="kind[]" value="ご意見・ご要望" />ご意見・ご要望</label></li>
+				<li><label><input type="checkbox" name="kind[]" value="交際希望" />交際希望</label></li>
+			</ul>
+		</dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>返信方法のご希望</dt>
+		<dd>
+			<ul>
+				<li><label><input type="checkbox" name="response[]" value="電話での返信を希望" />電話での返信を希望</label></li>
+				<li><label><input type="checkbox" name="response[]" value="メールでの返信を希望" />メールでの返信を希望</label></li>
+				<li><label><input type="checkbox" name="response[]" value="返信不要" />返信不要</label></li>
+			</ul>
+		</dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>お問い合わせの内容</dt>
+		<dd class="required"><textarea name="contents" cols="40" rows="5"></textarea></dd>
+	</dl>
+	
+	<dl>
+		<dt><i></i>愛の告白</dt>
+		<dd><textarea name="message" cols="40" rows="5"></textarea></dd>
+	</dl>
+	
+	<p id="form_submit"><input type="button" id="form_submit_button" value="送信する" /></p>
+	
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/mailform-js.php"></script>
+<!-- フリガナ自動入力ライブラリここから -->
+<script src="js/jquery.autoKana.js"></script>
+<script>
+	(function( $ ) {
+		$.fn.autoKana( 'input[name="name_1"]', 'input[name="read_1"]', {
+			katakana: false
+		});
+		$.fn.autoKana( 'input[name="name_2"]', 'input[name="read_2"]', {
+			katakana: false
+		});
+	})( jQuery );
+</script>
+<!-- フリガナ自動入力ライブラリここまで -->
+<!-- 住所自動入力ライブラリここから -->
+<script src="js/ajaxzip3.js"></script>
+<!-- 住所自動入力ライブラリここまで -->
+<!-- ご希望の日時選択ライブラリここから -->
+<script src="js/jquery.datetimepicker.js"></script>
+<script>
+	(function( $ ) {
+		$( 'input[name="schedule"]' ).datetimepicker({
+			lang: 'ja'
+		});
+	})( jQuery );
+</script>
+<!-- ご希望の日時選択ライブラリここまで -->
+<!-- フォーム終了 -->  
+
+  
+    <!-- トップに戻るリンク -->
+    <div class="backTop">
+        <a class="backTop" href="#link_top">top</a>
+    </div>
+
+</main><!-- /mainWrap -->
+
+<!-- フッター（削除OK※デフォルト非表示） -->
+<footer class="mainFooter">
+    design source:<a href="https://ragusnon.wwww.jp" rel="noopener">無糖</a><br>
+    ©CopyRight:<a href="https://atmark-master.themedia.jp" rel="noopener">あっとまーく/atmark</a>,でいすい 2023 AllRightsReserved.
+</footer>
+</body>
+</html>
