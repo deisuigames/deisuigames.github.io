@@ -11,25 +11,19 @@
 
 <!-- 既存サイトに組み込む場合に不要なCSSここから -->
 <link rel="stylesheet" href="css/reset.css" />
-<style>
-body {
-	color: #454545;
-	font-family: sans-serif;
-	background: #f0f0f0;
-}
-</style>
+
 <!-- 既存サイトに組み込む場合に不要なCSSここまで -->
 
 
 
 
-<link rel="stylesheet" href="css/mailform.css" />
+<link rel="stylesheet" href="mailform.css" />
 
 
 
 
 <!-- ご希望の日時選択ライブラリここから -->
-<link rel="stylesheet" href="css/jquery.datetimepicker.css" />
+<link rel="stylesheet" href="jquery.datetimepicker.css" />
 <!-- ご希望の日時選択ライブラリここまで -->
 
 
@@ -41,7 +35,7 @@ body {
 
 
 
-<form action="php/mailform.php" method="post" id="mail_form">
+<form action="mailform.php" method="post" id="mail_form">
 	
 	<dl>
 		<dt><i></i>会社名</dt>
@@ -190,13 +184,13 @@ body {
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/mailform-js.php"></script>
+<script src=mailform-js.php"></script>
 
 
 
 
 <!-- フリガナ自動入力ライブラリここから -->
-<script src="js/jquery.autoKana.js"></script>
+<script src="jquery.autoKana.js"></script>
 <script>
 	(function( $ ) {
 		$.fn.autoKana( 'input[name="name_1"]', 'input[name="read_1"]', {
@@ -213,14 +207,14 @@ body {
 
 
 <!-- 住所自動入力ライブラリここから -->
-<script src="js/ajaxzip3.js"></script>
+<script src="ajaxzip3.js"></script>
 <!-- 住所自動入力ライブラリここまで -->
 
 
 
 
 <!-- ご希望の日時選択ライブラリここから -->
-<script src="js/jquery.datetimepicker.js"></script>
+<script src="jquery.datetimepicker.js"></script>
 <script>
 	(function( $ ) {
 		$( 'input[name="schedule"]' ).datetimepicker({
