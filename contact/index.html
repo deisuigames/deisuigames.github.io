@@ -41,7 +41,7 @@
     </div>
 
     <div class="siteInfo">
-        <h1>でいすいのホームページ</h1><br><h3>お問い合わせ</h3>
+        <h1>でいすいのホームページ</h1>
         <div class="siteInfoInner">
             Official Deisui's homepage.
             <div class="lastUp"><img src=../image/リロードアイコン.png alt="最終更新日" height="12.5px" width="12.5px"><time id="modify"></time>
@@ -72,8 +72,8 @@ target.textContent = year + '-' + month + '-' + date;
 </nav>
 <!-- /ナビゲーション -->
 
-  
 <div class="Form">
+<form id="contact1" action="">
   <div class="Form-Item">
     <p class="Form-Item-Label">
       <span class="Form-Item-Label-Required">必須</span>ニックネーム</p>
@@ -94,7 +94,8 @@ target.textContent = year + '-' + month + '-' + date;
   <input type="hidden" name="tomail" value="contact.atmark@gmail.com">
   <input type="hidden" name="tosubj" value="フォーム">
   <input type="hidden" name="todelim" value="ALL">
-  <input type="submit" class="Form-Btn" value="送信する">
+</form>
+  <input type="submit" class="Form-Btn" form="contact1" value="送信する">
 </div>
 
         <!-- トップに戻るリンク -->
