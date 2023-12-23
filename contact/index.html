@@ -43,6 +43,7 @@ body {
 
 
 <link rel="stylesheet" href="css/mailform.css" />
+<link rel="stylesheet" href="addon/agreement/agreement.css" />
 
 
 
@@ -227,7 +228,14 @@ target.textContent = year + '-' + month + '-' + date;
 		<dt><i></i>愛の告白</dt>
 		<dd><textarea name="message" cols="40" rows="5"></textarea></dd>
 	</dl>
-	
+	<div id="agreement">
+  <h3>同意事項</h3>
+  <div>
+    <h4>規約その1</h4>
+    <p>ここに規約の文章を記入します。</p>
+  </div>
+  <p id="agree_check"><label><input type="checkbox" />規約に同意する</label><span class="error_check">同意していただく必要があります。</span></p>
+</div>
 	<p id="form_submit"><input type="button" id="form_submit_button" value="送信する" /></p>
 	
 </form>
