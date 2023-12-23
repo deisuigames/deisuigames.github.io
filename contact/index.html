@@ -70,7 +70,7 @@ body {
         <h1>でいすいのホームページ</h1>
         <div class="siteInfoInner">
             Official Deisui's homepage.
-            <div class="lastUp"><img src=../image/リロードアイコン.png alt="最終更新日" height="12.5px" width="12.5px"><time id="modify"></time>
+            <div class="lastUp"><img src=image/リロードアイコン.png alt="最終更新日" height="12.5px" width="12.5px"><time id="modify"></time>
 <script>
 /* 更新日の取得 */
 const last = new Date(document.lastModified);
@@ -85,6 +85,20 @@ target.textContent = year + '-' + month + '-' + date;
     </div><!-- /siteInfo -->
 </header>
 <!-- /ヘッダー -->
+
+
+<!-- ナビゲーション -->
+<nav class="mainNav">
+    <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="#link_main">contents</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">contact</a></li>
+    </ul>
+</nav>
+<!-- /ナビゲーション -->
+
+
 
 
 
@@ -284,49 +298,7 @@ target.textContent = year + '-' + month + '-' + date;
 </script>
 <!-- ご希望の日時選択ライブラリここまで -->
 
-<!-- トップに戻る用アンカー -->
-<a id="link_top"></a>
 
-<!-- ヘッダー -->
-<header class="mainHeader">
-    <div class="mainImage">
-        <div class="bar">DeisuiGames</div>
-    </div>
-
-    <div class="siteInfo">
-        <h1>でいすいのホームページ</h1>
-        <div class="siteInfoInner">
-            Official Deisui's homepage.
-            <div class="lastUp"><img src=image/リロードアイコン.png alt="最終更新日" height="12.5px" width="12.5px"><time id="modify"></time>
-<script>
-/* 更新日の取得 */
-const last = new Date(document.lastModified);
-const year = last.getFullYear();
-const month = last.getMonth() + 1;
-const date = last.getDate();
-/* 日付を書き換える */
-const target = document.getElementById('modify');
-target.textContent = year + '-' + month + '-' + date;
-</script></a></div>
-        </div><!-- /siteInfoInner -->
-    </div><!-- /siteInfo -->
-</header>
-<!-- /ヘッダー -->
-
-
-<!-- ナビゲーション -->
-<nav class="mainNav">
-    <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="#link_main">contents</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="/contact">contact</a></li>
-    </ul>
-</nav>
-<!-- /ナビゲーション -->
-
-
-メインコンテンツの下
     <!-- トップに戻るリンク -->
     <div class="backTop">
         <a class="backTop" href="#link_top">top</a>
@@ -336,7 +308,7 @@ target.textContent = year + '-' + month + '-' + date;
 
 <!-- フッター（削除OK※デフォルト非表示） -->
 <footer class="mainFooter">
-    design source:<a href="https://ragusnon.wwww.jp" rel="noopener">無糖</a>
+    design source:<a href="https://ragusnon.wwww.jp" rel="noopener">無糖</a><br>
     CopyRight:<a href="https://atmark-master.themedia.jp" rel="noopener">あっとまーく/atmark</a>,でいすい 2023 AllRightsReserved.
 </footer>
 
