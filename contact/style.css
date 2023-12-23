@@ -1,20 +1,110 @@
 @charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
 @font-face {
   font-family: 'かんじゅくゴシック'; 
   src: url('fonts/かんじゅくゴシック.otf') format('opentype');
 }
+
+/* フォントのライセンス表記 */
 /*
-'Teko' is licensed under the Open Font License.
-https://fonts.google.com/specimen/Teko
+'Rajdhani', 'Libre Barcode 128' are licensed under the Open Font License.
+https://fonts.google.com/specimen/Rajdhani
+https://fonts.google.com/specimen/Libre+Barcode+128
 */
 
+
+
+/* 基本設定 */
 html {
- background: transparent;
- font-size: 62.5%;
+    background: transparent;
+    font-size: 62.5%;
+}
+body {
+    min-height: 100vh;
+    background: #f7f2f2;
+    font-size: 1.3rem;
+    font-family: 'かんじゅくゴシック', sans-serif;
+    letter-spacing: 0.1em;
+    line-height: 180%;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+ul,ol {
+    list-style: none;
 }
 
-body {
- font-family: 'かんじゅくゴシック', sans-serif;
+
+/* メイン画像一括設定 */
+:root {
+    --mainImageURL: url('../img/design16_2.png');
+}
+
+
+/* フォント指定まとめて */
+h2,
+h3,
+h4,
+.mainNav,
+.backTop {
+    font-family: 'Rajdhani', 'かんじゅくゴシック', sans-serif;
+}
+
+
+/* 見出し */
+h2 {
+    position: relative;
+    padding: 1px 0;
+    margin: 5px 0 30px;
+    background: var(--mainImageURL) center bottom / 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #a5303011;
+    font-size: 2.8em;
+    font-weight: bolder;
+    text-align: center;
+}
+h2 > span {
+    display: block;
+    position: relative;
+     top: -12px;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    color: #444;
+}
+h3 {
+    margin: 30px 0;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.3em;
+    letter-spacing: .2rem;
+}
+h3 > span {
+    padding: 0 20px 5px;
+    border-bottom: #666 solid 2px;
+}
+h4 {
+    font-size: 1.2em;
+    margin: 10px .5em 5px;
+}
+h3.ja,
+h4.ja {
+    font-weight: normal;
+}
+
+
+/* 強調 */
+em {
+    font-style: normal;
+    background-color: #d7bfbf;
+    background: #e0bcbc;
+}
+strong {
+    background: repeating-linear-gradient(90deg, #e0bcbc 0, #e0bcbc 4px, #fff 4px, #fff 6px);
+    color: #000;
+    font-weight: bolder;
 }
 
 <!-- form -->
