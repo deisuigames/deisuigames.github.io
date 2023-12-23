@@ -14,7 +14,7 @@ date_default_timezone_set( 'Asia/Tokyo' );
 
 
 
-require_once( dirname( __FILE__ ) .'/class.mailform.php' );
+require_once( dirname( __FILE__ ) .'class.mailform.php' );
 $responsive_mailform = new Mailform();
 
 
