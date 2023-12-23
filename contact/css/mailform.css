@@ -144,7 +144,7 @@ form#mail_form dl dt {
 	width: 30%;
 	float: left;
 	padding: 35px 0 25px;
-	text-align: right;
+	/*text-align: right;*/
 }
 
 form#mail_form dl dd {
@@ -154,9 +154,10 @@ form#mail_form dl dd {
 }
 
 form#mail_form dl dt i {
-	float: left;
+	/*float: left;*/
 	position: relative;
 	top: -2px;
+	margin-left: 20px;
 }
 
 
