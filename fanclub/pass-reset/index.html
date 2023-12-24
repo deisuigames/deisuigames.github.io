@@ -79,38 +79,45 @@ target.textContent = year + '-' + month + '-' + date;
             form
             <span>パスワード再設定フォーム</span>
         </h2>
-        <form class="c-form">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdSLDatzDhBOi5qBn-aOhGawSjusZ8Y2dPO1j1_sXr5gi6L5w/formResponse" method="POST">
 	<div class="c-form__item">
-		<label class="c-form__label" for="field-name"
-			>名前・会社名<span class="c-form__required">必須</span></label
+		<label class="c-form__label" for="login-mail"
+			>ログイン用メールアドレス<span class="c-form__required">必須</span></label
 		>
 		<input
+			name="entry.783679058"
 			class="c-form__input"
-			id="field-name"
-			placeholder="株式会社 山田"
-			type="text"
-			required="required"
-		/>
-	</div>
-	<div class="c-form__item">
-		<label class="c-form__label" for="field-mail"
-			>メールアドレス<span class="c-form__required">必須</span></label
-		>
-		<input
-			class="c-form__input"
-			id="field-mail"
-			placeholder="sample@gmail.com"
+			id="login-mail"
+			placeholder="yamada@example.com"
 			type="email"
 			required="required"
 		/>
 	</div>
 	<div class="c-form__item">
-		<label class="c-form__label" for="field-message">メッセージ内容</label>
-		<textarea
+		<label class="c-form__label" for="member-name"
+			>会員名<span class="c-form__required">必須</span></label
+		>
+		<input
+                        name="entry.2114174547"
 			class="c-form__input"
-			id="field-message"
-			placeholder="お問い合わせ内容"
-		></textarea>
+			id="member-name"
+			placeholder="やまっだー"
+			type="text"
+			required="required"
+		/>
+	</div>
+	<div class="c-form__item">
+		<label class="c-form__label" for="name"
+			>本名<span class="c-form__required">必須</span></label
+		>
+		<input
+                        name="entry.1232922393"
+			class="c-form__input"
+			id="member-name"
+			placeholder="山田太郎"
+			type="text"
+			required="required"
+		/>
 	</div>
 	<div class="c-form__submit">
 		<button type="submit">送信する</button>
