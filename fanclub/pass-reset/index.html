@@ -25,10 +25,20 @@
 <meta name="msapplication-TileColor" content="#ffaec4">
 <meta name="theme-color" content="#ffffff">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<link rel="stylesheet" type="text/css" href="reset.css" media="screen">
 <link rel="stylesheet" type="text/css" href="style.css" media="screen">
 <!--favicon-->
 </head>
+	
+<script type="text/javascript">
+    let submitted = false;
+</script>
+<iframe
+    name="hidden_iframe"
+    id="hidden_iframe"
+    style="display: none"
+    onload="if(submitted){window.location='../';}"
+></iframe>
+	
 <body>
 <!-- トップに戻る用アンカー -->
 <a id="link_top"></a>
@@ -79,7 +89,7 @@ target.textContent = year + '-' + month + '-' + date;
             form
             <span>パスワード再設定フォーム</span>
         </h2>
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdSLDatzDhBOi5qBn-aOhGawSjusZ8Y2dPO1j1_sXr5gi6L5w/formResponse" method="POST">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdSLDatzDhBOi5qBn-aOhGawSjusZ8Y2dPO1j1_sXr5gi6L5w/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="c-form">
 	<div class="c-form__item">
 		<label class="c-form__label" for="login-mail"
 			>ログイン用メールアドレス<span class="c-form__required">必須</span></label
