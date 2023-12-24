@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 @import url('https://fonts.googleapis.com/css?family=Rajdhani');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
 @font-face {
@@ -522,7 +521,7 @@ textarea.c-form__input {
 	color: green;
 	background-color: transparent;
 }
-
+/*
 @media (min-width: 640px) {
 	.c-form__item {
 		flex-wrap: nowrap;
@@ -534,3 +533,4 @@ textarea.c-form__input {
 		width: 55%;
 	}
 }
+*/
