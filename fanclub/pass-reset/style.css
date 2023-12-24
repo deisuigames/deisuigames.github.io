@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
 @font-face {
   font-family: 'かんじゅくゴシック'; 
-  src: url('fonts/かんじゅくゴシック.otf') format('opentype');
+  src: url('../fonts/かんじゅくゴシック.otf') format('opentype');
 }
 
 /* フォントのライセンス表記 */
