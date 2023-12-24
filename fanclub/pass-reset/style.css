@@ -345,6 +345,7 @@ h1 {
 .c-form__input {
 	width: 90%;
 	font-size: 16px;
+	font-family: 'かんじゅくゴシック', sans-serif;
 	border: solid 1px #333;
 	border-radius: 4px;
 }
@@ -353,6 +354,7 @@ h1 {
 }
 .c-form__required {
 	color: #fff;
+	font-family: 'かんじゅくゴシック', sans-serif;
 	background-color: #7a0d0d;
 	border-radius: 4px;
 	padding: 5px 5px;
@@ -365,6 +367,7 @@ textarea.c-form__input {
 	text-align: center;
 }
 .c-form__submit button {
+	font-family: 'かんじゅくゴシック', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	color: #fff;
@@ -379,7 +382,7 @@ textarea.c-form__input {
 	color: #7a0d0d;
 	background-color: transparent;
 }
-/*
+
 @media (min-width: 640px) {
 	.c-form__item {
 		flex-wrap: nowrap;
@@ -391,4 +394,4 @@ textarea.c-form__input {
 		width: 55%;
 	}
 }
-*/
+
