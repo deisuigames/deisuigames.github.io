@@ -29,6 +29,15 @@
 <link rel="stylesheet" type="text/css" href="../style.css" media="screen">
 <!--favicon-->
 </head>
+<script type="text/javascript">
+    let submitted = false;
+</script>
+<iframe
+    name="hidden_iframe"
+    id="hidden_iframe"
+    style="display: none"
+    onload="if(submitted){window.location='thanks.html';}"
+></iframe>
 <body>
 <!-- トップに戻る用アンカー -->
 <a id="link_top"></a>
@@ -78,24 +87,59 @@ target.textContent = year + '-' + month + '-' + date;
     <section class="box">
         <h2>
             information
-            <span>このサイトについて</span>
+            <span>お問い合わせ</span>
         </h2>
-        <h3><span>about</span></h3>
-<form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeRGJnJEAN1JzV3rJpqmmZIGvI3I27jFsQijF2d3w_7X8SeWQ/formResponse" method="POST">
+        <h3><span>contact</span></h3>
+<form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeRGJnJEAN1JzV3rJpqmmZIGvI3I27jFsQijF2d3w_7X8SeWQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
 <table class="ta1">
 <tr>
-<th>お名前※</th>
-<td><input type="text" name="お名前" size="30" class="ws"></td>
+<th>ニックネーム</th>
+<td><input type="text" name="entry.518987943" size="30" class="ws"></td>
 </tr>
 <tr>
-<th>メールアドレス※</th>
-<td><input type="text" name="メールアドレス" size="30" class="ws"></td>
+<th>本名※</th>
+<td><input type="text" name="entry.1677051122" size="30" class="ws" required></td>
 </tr>
 <tr>
-<th>お問い合わせ詳細※</th>
-<td><textarea name="お問い合わせ詳細" cols="30" rows="10" class="wl"></textarea></td>
+<th>本名(フリガナ)※</th>
+<td><input type="text" name="entry.1951779540" size="30" class="ws" required></td>
+</tr>
+<tr>
+<th>年齢※</th>
+<td><input type="number" name="entry.535158945" size="30" class="ws" required></td>
+</tr>
+<tr>
+<th>性別※</th>
+<td><select name="entry.1798562005" required>
+<option value="男">男</option>
+<option value="女">女</option>
+<option value="その他">その他</option>
+</select>
+</td>
+</tr>
+<tr>
+<th>お問い合わせ先</th>
+<td>
+<input type="checkbox" name="entry.1093410675" value="でいすい">でいすい
+<input type="checkbox" name="entry.1093410675" value="あっとまーく/atmark(管理者)">あっとまーく/atmark(管理者)
+<input type="checkbox" name="entry.1093410675" value="でいすいIT管理室(管理者)">でいすいIT管理室(管理者)
+</td>
+</tr>
+<tr>
+<th>メールアドレス</th>
+<p>返信が必要な場合はこちらにメールアドレスを入力してください</p>
+<td><input type="email" name="entry.173243195" size="30" class="ws"></td>
+</tr>
+<tr>
+<th>お問い合わせ内容※</th>
+<td><textarea name="entry.1507770940" rows="5" cols="33" class="ws">
+</textarea>
+</td>
 </tr>
 </table>
+<p class="btn">
+<input type="submit" value="送信">
+</p>
 </form>
 
 
