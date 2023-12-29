@@ -25,7 +25,7 @@ body {
     min-height: 100vh;
     background: #f7f2f2;
     font-size: 1.3rem;
-    font-family: 'かんじゅくゴシック, sans-serif;
+    font-family: 'かんじゅくゴシック', sans-serif;
     letter-spacing: 0.1em;
     line-height: 180%;
 }
