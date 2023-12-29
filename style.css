@@ -514,6 +514,15 @@ h1 {
     height: 100%;
     background: #fff;
 }
+img {
+  margin: auto;
+  display: block;
+}
+img {
+  width: 60%;
+  margin: auto;
+  display: block;
+}
 .loader {
   color: #940000;
   font-size: 90px;
