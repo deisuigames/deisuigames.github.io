@@ -509,6 +509,7 @@ h1 {
     position: fixed;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
     width: 100%;
     height: 100%;
@@ -531,6 +532,7 @@ h1 {
   -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
   animation: load6 1.7s infinite ease, round 1.7s infinite ease;
 }
+
 @-webkit-keyframes load6 {
   0% {
     box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
