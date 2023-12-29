@@ -516,6 +516,9 @@ h1 {
     background: #fff;
     margin: 0 auto;
 }
+.loader-img {
+	margin: 0 auto;
+}
 .loader {
   color: #940000;
   font-size: 90px;
