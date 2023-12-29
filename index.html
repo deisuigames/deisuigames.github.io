@@ -57,7 +57,7 @@
 
 <div class="loader-wrap" style="z-index:2147483646">
     <div class="loader">Loading...</div>
-	<p>Loading...</p>
+    <h3 style="text-align:center">Loading...</h2>
 </div>
 
 	
@@ -161,7 +161,7 @@ target.textContent = year + '-' + month + '-' + date;
           <br><br>
           <div id="pic_frame">
           <a href="/contact" target="_blank" style="text-decoration:none;"><img src="image/mail.svg" width="70px" height="70px" class="sns_icon"></a>
-          <p><a href="/contact" target="_blank" style="text-decoration:none;">お問い合わせ</a></p>
+          <p><a href="/contact" style="text-decoration:none;">お問い合わせ</a></p>
         </div>
           <br>
           <div id="pic_frame">
@@ -189,18 +189,9 @@ target.textContent = year + '-' + month + '-' + date;
 
     <section id="news" class="box">
     <h2>
-    maincontents
-    <span>作品</span>
+    news
+    <span>お知らせ</span>
     </h2>
-    <h3><span>namechange</span></h3>
-    <!-- ダミーフォーム（名前変換） -->
-    <form class="namechangeForm space">
-        <input type="text" placeholder="名字" class="enter">
-        <input type="text" placeholder="名前" class="enter">
-        <input type="submit" value="input" class="button">
-    </form>
-
-
     <!-- 長編一覧 -->
     <h3><span>long</span></h3>
     <ul class="longList space">
@@ -265,9 +256,9 @@ target.textContent = year + '-' + month + '-' + date;
 	var loader = $('.loader-wrap');
 
 	//ページの読み込みが完了したらアニメーションを非表示
-	$(window).on('load',function(){
-		loader.fadeOut();
-	});
+//	$(window).on('load',function(){
+//		loader.fadeOut();
+//	});
 
 	//ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
 	setTimeout(function(){
