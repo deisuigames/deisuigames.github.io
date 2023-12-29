@@ -3,10 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
 @font-face {
-  font-family: 'KFhimaji'; 
-  src: url('fonts/KFhimaji.otf') format('opentype');
-}
-@font-face {
   font-family: 'かんじゅくゴシック'; 
   src: url('fonts/かんじゅくゴシック.otf') format('opentype');
 }
