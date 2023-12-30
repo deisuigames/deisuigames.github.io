@@ -40,7 +40,7 @@ ul,ol {
 
 /* メイン画像一括設定 */
 :root {
-    --mainImageURL: url('../img/design16_2.png');
+    --mainImageURL: url('../image/main.jpg');
 }
 
 
