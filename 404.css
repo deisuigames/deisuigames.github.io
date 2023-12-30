@@ -1,4 +1,8 @@
 @charset "utf-8";
+@font-face {
+  font-family: 'かんじゅくゴシック'; 
+  src: url('https://deisuigames.github.io/fonts/かんじゅくゴシック.otf') format('opentype');
+}
 
 html, body {
   height: 100%;
@@ -108,4 +112,13 @@ a.back {
 }
 a.back:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.mainFooter {
+    margin: 10vh 0;
+    font-size: 1rem;
+    letter-spacing: .2em;
+    text-align: center;
+    opacity: .3;
+    font-family: 'かんじゅくゴシック', sans-serif;
 }
