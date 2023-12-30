@@ -180,9 +180,22 @@ target.textContent = year + '-' + month + '-' + date;
     design source:<a href="https://ragusnon.wwww.jp" rel="noopener">無糖</a><br>
     Copyright&copy;:<a href="https://atmark-master.themedia.jp" rel="noopener">あっとまーく/atmark</a>,<a href="https://deisuigames.github.io/it-admin">でいすいIT管理室</a>,でいすい 2023 AllRightsReserved.
 </footer>
-    <div class="loader-wrap" style="z-index:2147483646; text-align: center;">
-    <!--<h3>Loading...</h3>-->
-    <div class="loader">Loading...</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+	var loader = $('.loader-wrap');
+
+	//ページの読み込みが完了したらアニメーションを非表示
+	$(window).on('load',function(){
+		loader.fadeOut();
+	});
+
+	//ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
+	setTimeout(function(){
+		loader.fadeOut();
+	},3000);
+});
+    </script>
 </div>
 </body>
 </html>
