@@ -32,7 +32,7 @@ html, body {
   right: 0;
   color: transparent;
   /* webkit only for graceful degradation to IE */
-  background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
+  background: -webkit-repeating-linear-gradient(-45deg, #ff8177, #ff867a, #ff8c7f, #f99185, #cf556c, #b12a5b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 400%;
@@ -99,7 +99,7 @@ a.back {
   position: fixed;
   right: 40px;
   bottom: 40px;
-  background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176);
+  background: -webkit-repeating-linear-gradient(-45deg, #ff8177, #ff867a, #ff8c7f, #f99185);
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   color: #fff;
