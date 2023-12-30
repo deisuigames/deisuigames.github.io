@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="cache-control" content="no-cache">
 <meta charset="UTF-8">
-<title>コラボ・仕事依頼お問い合わせ|でいすいのホームページ</title>
+<title>コラボお問い合わせ|でいすいのホームページ</title>
 <link rel="apple-touch-icon" sizes="180x180" href="../../image/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../image/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../../image/favicon-16x16.png">
@@ -13,7 +13,7 @@
 <meta name="robots" content="noarchive">
 <meta name="description" content="大人気ゲーム「スーパーマリオブラザーズ」第4弾である「マリオワールド」RTA元世界一位・登録者約20万人のYouTuber、「でいすいのゲームちゃんねる/DeisuiGames」の公式ホームページです。最新のお知らせやお問い合わせ、各種SNSリンクなど。" /> 
 <meta name="keywords" content="でいすい,deisui,マリオワールド,YouTuber,ホームページ,RTA,公式" />
-<meta property="og:description" content="YouTuber「でいすい」へのお問い合わせ(コラボ・仕事依頼専用)はこちらから。" />
+<meta property="og:description" content="YouTuber「でいすい」へのお問い合わせ(コラボ専用)はこちらから。" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://deisuigames.github.io/" />
 <meta property="og:image" content="https://deisuigames.github.io/image/icon.png" />
@@ -100,45 +100,46 @@ target.textContent = year + '-' + month + '-' + date;
 <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSf-TLrljfa2hj_xOIBQ2gngnNJX6DFw50Bq11RVnxoArBdEjQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
 <table class="ta1">
 <tr>
-<th>活動名/企業名/グループ名※</th>
-<td><input type="text" name="entry.254644529" size="30" class="ws" required></td>
+<th>活動名/グループ名※</th>
+<td><input type="text" name="entry.254644529" size="30" class="ws" placeholder="例）でいすいのゲームちゃんねる" required></td>
 </tr>
 <tr>
-<th>代表者本名※</th>
-<td><input type="text" name="entry.1720795727" size="30" class="ws" required></td>
+<th>個人/グループ※</th>
+<td><input type="radio" name="entry.307061447" id="kojin" value="個人" class="ws" required>
+	<label for="kojin">個人</label>
+    <input type="radio" name="entry.307061447" id="group" value="グループ" class="ws">
+	<label for="group">グループ</label>
+</td>
 </tr>
 <tr>
 <th>代表者本名(フリガナ)※</th>
 <td><input type="text" name="entry.2051422171" size="30" class="ws" required></td>
 </tr>
 <tr>
-<th>代表者年齢※</th>
-<td><input type="number" name="entry.1639311484" size="30" class="ws" required></td>
-</tr>
-<tr>
-<th>代表者性別※</th>
-<td><select name="entry.1580112281" required>
-<option value="男">男</option>
-<option value="女">女</option>
-<option value="その他">その他</option>
-</select>
+<th>メンバー情報※</th>
+<td><p>「すべての」メンバーの情報を、以下の[]に当てはめ書いてください。</p><p>[役職(あれば)]：[活動名]・[本名]・[本名(フリガナ)]・[年齢]・[性別]</p>
+	<textarea name="entry.1383801372" rows="10" cols="60" class="ws" placeholder="例）リーダー：でいすい・山田太郎・ヤマダタロウ・40歳・男&#13;メンバー：はなっこー・山田花子・ヤマダハナコ・30歳・女" required>
+	</textarea>
 </td>
 </tr>
 <tr>
-<th>活動ストリーミングサービス(コラボのお問い合わせの場合)</th>
+<th>活動ストリーミングサービス</th>
 <td>
-<textarea name="entry.1568331404" rows="5" cols="33" class="ws">
+<textarea name="entry.1568331404" rows="10" cols="60" class="ws" placeholder="例）YouTube：@deisuigames&#13;ニコニコ動画：ID:5340967">
 </textarea>
 </td>
 </tr>
 <tr>
 <th>メールアドレス</th>
-<p>返信が必要な場合は「メールアドレス」の欄にメールアドレスを入力してください</p>
-<td><input type="email" name="entry.148242241" size="30" class="ws"></td>
+<td><input type="email" name="entry.148242241" size="30" class="ws" placeholder="例）deisuim9@gmail.com"></td>
+</tr>
+<tr>
+<th>X(旧Twitter)アカウントID※</th>
+<td><p><a href="https://twitter.com/deisuideisui">@deisuideisui</a>と<a href="https://twitter.com/atmark_master">@atmark_master</a>をフォローしておいてください</p><input type="text" name="entry.137660253" size="30" class="ws" placeholder="例）@deisuideisui"></td>
 </tr>
 <tr>
 <th>お問い合わせ内容※</th>
-<td><p>グループでのコラボを申し込まれる場合、各メンバー名・本名・フリガナ・年齢・性別をそれぞれ記載しておいてください</p><textarea name="entry.530191982" rows="10" cols="60" class="ws" placeholder="例）やまっだー・山田太郎・ヤマダタロウ・10歳・男&#13;はなっこー・山田花子・ヤマダハナコ・12歳・女&#13;&#13;コラボをさせていただきたいです" required>
+<td><textarea name="entry.530191982" rows="10" cols="60" class="ws" placeholder="例）コラボをさせていただきたいです" required>
 </textarea>
 </td>
 </tr>
