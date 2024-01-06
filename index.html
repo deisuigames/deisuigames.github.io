@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<script type="text/javascript" src="ganalytics.php?v=1"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8WXM5CNMF"></script>
 <script>
@@ -8,7 +9,15 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-J8WXM5CNMF');
+  gtag('config', 'G-J8WXM5CNMF'),
+  {
+    'custom_map': {
+    'dimension1': 'ip_address',
+    'dimension2': 'access_time',
+    },
+    'ip_address': getIPAddress(),
+    'access_time': getAccessTime(),
+  });
 </script>
 
 <meta http-equiv="cache-control" content="no-cache">
